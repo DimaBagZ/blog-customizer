@@ -3,9 +3,24 @@
 	left: 0;
 	width: 616px;
 	height: 100%;
-	overflow: scroll;
+	overflow: auto; /* Добавляем прокрутку, если контент превышает высоту */
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
+
+	/* Стилизация скролл-бара */
+
+	&::-webkit-scrollbar {
+		width: 8px; /* Ширина скролл-бара */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #d7d7d7; /* Цвет ползунка */
+		border-radius: 4px; /* Скругление углов */
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent; /* Прозрачный фон трека */
+	}
 }
 
 .container_open {
@@ -16,6 +31,7 @@
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
+	gap: 50px;
 	box-sizing: border-box;
 	width: 616px;
 	height: auto;
