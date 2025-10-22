@@ -185,8 +185,6 @@ _Документация компонентов в Storybook_
 
 <div align="center">
 
-
-
 [⬆️ Наверх](#blog-customizer)
 
 </div>
