@@ -34,8 +34,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
-          force_orphan: true
+          force_orphan: false
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          destination_dir: .
-          target_branch: gh-pages-storybook
+          destination_dir: storybook
+          target_branch: gh-pages
