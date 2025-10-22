@@ -1,37 +1,15 @@
+import './styles/index.scss'; // Глобальные стили
 import { createRoot } from 'react-dom/client';
-import { StrictMode, CSSProperties } from 'react';
-import clsx from 'clsx';
+import { StrictMode } from 'react';
+import { App } from './App';
 
-import { Article } from './components/article/Article';
-import { ArticleParamsForm } from './components/article-params-form/ArticleParamsForm';
-import { defaultArticleState } from './constants/articleProps';
+// Получаем корневой DOM-элемент
+const rootElement = document.getElementById('root') as HTMLDivElement;
+// Создаем корень React приложения
+const appRoot = createRoot(rootElement);
 
-import './styles/index.scss';
-import styles from './styles/index.module.scss';
-
-const domNode = document.getElementById('root') as HTMLDivElement;
-const root = createRoot(domNode);
-
-const App = () => {
-	return (
-		<main
-			className={clsx(styles.main)}
-			style={
-				{
-					'--font-family': defaultArticleState.fontFamilyOption.value,
-					'--font-size': defaultArticleState.fontSizeOption.value,
-					'--font-color': defaultArticleState.fontColor.value,
-					'--container-width': defaultArticleState.contentWidth.value,
-					'--bg-color': defaultArticleState.backgroundColor.value,
-				} as CSSProperties
-			}>
-			<ArticleParamsForm />
-			<Article />
-		</main>
-	);
-};
-
-root.render(
+// Рендерим приложение в StrictMode для дополнительных проверок
+appRoot.render(
 	<StrictMode>
 		<App />
 	</StrictMode>

@@ -29,3 +29,10 @@
 .button_clear:hover div {
 	color: white;
 }
+
+// COMMIT: Добавлено активное состояние для кнопки "Сбросить"
+
+.button_clear:active {
+	// Темнее черного при нажатии
+	background-color: #333333;
+}
