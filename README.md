@@ -150,17 +150,20 @@ npm run test
 
 ### Главная страница
 
-![Главная страница](screenshots/main-page.png)
+<img width="1027" height="813" alt="image" src="https://github.com/user-attachments/assets/0cf47bf7-5662-451e-8168-74115819232c" />
+
 _Интерфейс с настройками стилей статьи_
 
 ### Панель настроек
 
-![Панель настроек](screenshots/settings-panel.png)
+<img width="1028" height="815" alt="image" src="https://github.com/user-attachments/assets/20bb8bcc-3fd2-4e3e-9f94-c0a44f2aa542" />
+
 _Боковая панель с параметрами настройки_
 
 ### Storybook
 
-![Storybook](screenshots/storybook.png)
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/d80b0d0a-38fe-4fb5-9f33-58f99dffd4f1" />
+
 _Документация компонентов в Storybook_
 
 ## Особенности
